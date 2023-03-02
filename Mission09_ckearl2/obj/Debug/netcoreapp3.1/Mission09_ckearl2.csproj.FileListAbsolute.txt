@@ -80,3 +80,4 @@
 /Users/tophkearl/byU/wint_23/is413/vs_mac/Mission09_ckearl2/Mission09_ckearl2/obj/Debug/netcoreapp3.1/Mission09_ckearl2.dll
 /Users/tophkearl/byU/wint_23/is413/vs_mac/Mission09_ckearl2/Mission09_ckearl2/obj/Debug/netcoreapp3.1/Mission09_ckearl2.pdb
 /Users/tophkearl/byU/wint_23/is413/vs_mac/Mission09_ckearl2/Mission09_ckearl2/obj/Debug/netcoreapp3.1/Mission09_ckearl2.genruntimeconfig.cache
+/Users/tophkearl/byU/wint_23/is413/vs_mac/Mission09_ckearl2/Mission09_ckearl2/obj/Debug/netcoreapp3.1/Razor/Views/Shared/BookSummary.cshtml.g.cs

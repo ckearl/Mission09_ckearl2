@@ -1,39 +1,19 @@
 @{
-    Layout = null;
     ViewBag.Calc = 25.0 / 6;
+    ViewData["Title"] = "Index";
 }
 
 @model BooksViewModel 
 
-<!DOCTYPE html>
-
-<html>
-<head>
-    <title>title</title>
-</head>
-<body>
-<div>
-    <h1>The Water Project</h1>
-
+<h3 class="m-4">Welcome to the Bonzai Bookstore, a collection of Spencer Hilton's favorite books!</h3>
+<div class="d-flex flex-column justify-content-center align-items-center mt-4">
     @foreach (Book b in Model.Books)
-        {
-            <h3>@b.Title</h3>
-            <ul>
-                <li>Author: @b.Author</li>
-                <li>Publisher: @b.Publisher</li>
-                <li>ISBN: @b.Isbn</li>
-                <li>Classification/Category: @b.Classification</li>
-                <li>Number of Pages: @b.PageCount</li>
-                <li>Price: $@b.Price</li>
-            </ul>
-            
-            <br/>
-        }
-    
-    
+    {
+        <partial name="BookSummary" model="b" />
+    }  
+    <div page-something="@Model.PageInfo" page-action="Index" class="btn btn-light text-decoration-none" ></div>
 </div>
 
-<div page-something="@Model.PageInfo" page-action="Index"></div>
+    
 
-</body>
-</html>
+
