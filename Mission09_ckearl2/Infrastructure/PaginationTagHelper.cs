@@ -19,10 +19,8 @@ namespace Mission09_ckearl2.Infrastructure
         [ViewContext]
         [HtmlAttributeNotBound]
         public ViewContext vc { get; set; }
-        
         public PageInfo PageSomething { get; set; }
         public string PageAction { get; set; }
-        
         public bool PageClassesEnabled { get; set; } = false;
         public string PageClass { get; set; }
         public string PageClassNormal { get; set; }
@@ -33,18 +31,16 @@ namespace Mission09_ckearl2.Infrastructure
             IUrlHelper uh = uhf.GetUrlHelper(vc);
             TagBuilder final = new TagBuilder("div");
             
-            for (int i = 1; i < PageSomething.TotalPages; i++)
+            for (int i = 1; i < PageSomething.TotalPages + 1; i++)
             {
                 TagBuilder tb = new TagBuilder("a");
                 tb.Attributes["href"] = uh.Action(PageAction, new {pageNum = i});
-                tb.InnerHtml.Append(i.ToString());
-                
                 if (PageClassesEnabled) {
-                    final.AddCssClass(PageClass);
-                    final.AddCssClass(i == PageSomething.CurrentPage
+                    tb.AddCssClass(PageClass);
+                    tb.AddCssClass(i == PageSomething.CurrentPage
                         ? PageClassSelected : PageClassNormal);
                 }
-
+                tb.InnerHtml.Append(i.ToString());
                 final.InnerHtml.AppendHtml(tb);
             }
 
