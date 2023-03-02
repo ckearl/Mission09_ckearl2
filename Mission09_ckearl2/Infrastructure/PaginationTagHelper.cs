@@ -1,0 +1,54 @@
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Mvc.Routing;
+using Microsoft.AspNetCore.Mvc.ViewFeatures;
+using Microsoft.AspNetCore.Razor.TagHelpers;
+using Mission09_ckearl2.Models.ViewModels;
+
+
+namespace Mission09_ckearl2.Infrastructure
+{
+    [HtmlTargetElement("div", Attributes = "page-something")]
+    public class PaginationTagHelper : TagHelper
+    {
+        // Dynamically create the page links for us
+        private IUrlHelperFactory uhf;
+
+        public PaginationTagHelper(IUrlHelperFactory temp) => uhf = temp;
+        
+        [ViewContext]
+        [HtmlAttributeNotBound]
+        public ViewContext vc { get; set; }
+        
+        public PageInfo PageSomething { get; set; }
+        public string PageAction { get; set; }
+        
+        public bool PageClassesEnabled { get; set; } = false;
+        public string PageClass { get; set; }
+        public string PageClassNormal { get; set; }
+        public string PageClassSelected { get; set; }
+        
+        public override void Process (TagHelperContext context, TagHelperOutput tho)
+        {
+            IUrlHelper uh = uhf.GetUrlHelper(vc);
+            TagBuilder final = new TagBuilder("div");
+            
+            for (int i = 1; i < PageSomething.TotalPages; i++)
+            {
+                TagBuilder tb = new TagBuilder("a");
+                tb.Attributes["href"] = uh.Action(PageAction, new {pageNum = i});
+                tb.InnerHtml.Append(i.ToString());
+                
+                if (PageClassesEnabled) {
+                    final.AddCssClass(PageClass);
+                    final.AddCssClass(i == PageSomething.CurrentPage
+                        ? PageClassSelected : PageClassNormal);
+                }
+
+                final.InnerHtml.AppendHtml(tb);
+            }
+
+            tho.Content.AppendHtml(final.InnerHtml);
+        }
+    }
+}

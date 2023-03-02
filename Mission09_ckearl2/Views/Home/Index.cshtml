@@ -1,0 +1,39 @@
+@{
+    Layout = null;
+    ViewBag.Calc = 25.0 / 6;
+}
+
+@model BooksViewModel 
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>title</title>
+</head>
+<body>
+<div>
+    <h1>The Water Project</h1>
+
+    @foreach (Book b in Model.Books)
+        {
+            <h3>@b.Title</h3>
+            <ul>
+                <li>Author: @b.Author</li>
+                <li>Publisher: @b.Publisher</li>
+                <li>ISBN: @b.Isbn</li>
+                <li>Classification/Category: @b.Classification</li>
+                <li>Number of Pages: @b.PageCount</li>
+                <li>Price: $@b.Price</li>
+            </ul>
+            
+            <br/>
+        }
+    
+    
+</div>
+
+<div page-something="@Model.PageInfo" page-action="Index"></div>
+
+</body>
+</html>
