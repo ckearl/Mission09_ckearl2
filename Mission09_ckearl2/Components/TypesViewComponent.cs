@@ -3,7 +3,7 @@ using Mission09_ckearl2.Models;
 using System.Collections;
 using System.Linq;
 
-namespace WaterProject.Components
+namespace Mission09_ckearl2.Components
 {
     public class TypesViewComponent : ViewComponent
     {
@@ -11,7 +11,7 @@ namespace WaterProject.Components
         public TypesViewComponent(IBookstoreRepository temp) => repo = temp;
         public IViewComponentResult Invoke()
         {
-            ViewBag.SelectedType = RouteData?.Values["projectType"];
+            ViewBag.SelectedType = RouteData?.Values["bookType"];
             
             var types = repo.Books
                 .Select(x => x.Category)

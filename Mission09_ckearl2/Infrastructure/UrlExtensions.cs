@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Http;
 
-namespace WaterProject.Infrastructure
+namespace Mission09_ckearl2.Infrastructure
 {
     public static class UrlExtensions
     {

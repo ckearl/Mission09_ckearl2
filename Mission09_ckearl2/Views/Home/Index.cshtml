@@ -1,12 +1,13 @@
 @{
-    ViewBag.Calc = 25.0 / 6;
     ViewData["Title"] = "Index";
 }
 
 @model BooksViewModel 
 
-<h3 class="m-4">Welcome to the Bonzai Bookstore, a collection of Spencer Hilton's favorite books!</h3>
-<div class="d-flex flex-column justify-content-center align-items-center mt-4">
+<!--<h3 class="m-4">Welcome to the Bonzai Bookstore, a collection of Spencer Hilton's favorite books!</h3>-->
+
+
+<div class="d-flex flex-column justify-content-center align-items-center">
     @foreach (Book b in Model.Books)
     {
         <partial name="BookSummary" model="b" />

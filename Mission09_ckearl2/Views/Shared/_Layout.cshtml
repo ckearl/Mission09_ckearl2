@@ -19,8 +19,15 @@
     <a class="navbar-brand" href="#">Bonzai Bookstore</a>
 
 </nav>
-
-@RenderBody()
+<div class="row m-1 p-1">
+    
+    <div class="col-3" id="types">
+        <vc:types></vc:types>
+    </div>
+    <div class="col-9">
+        @RenderBody()
+    </div>
+</div>
 
 <footer><h2>Thanks for checking out this database.</h2></footer>
 </body>
