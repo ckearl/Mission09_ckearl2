@@ -86,3 +86,4 @@
 /Users/tophkearl/byU/wint_23/is413/vs_mac/Mission09_ckearl2/Mission09_ckearl2/obj/Debug/netcoreapp3.1/Razor/Pages/_ViewImports.cshtml.g.cs
 /Users/tophkearl/byU/wint_23/is413/vs_mac/Mission09_ckearl2/Mission09_ckearl2/obj/Debug/netcoreapp3.1/Razor/Pages/_ViewStart.cshtml.g.cs
 /Users/tophkearl/byU/wint_23/is413/vs_mac/Mission09_ckearl2/Mission09_ckearl2/obj/Debug/netcoreapp3.1/Razor/Views/Shared/Components/Types/Default.cshtml.g.cs
+/Users/tophkearl/byU/wint_23/is413/vs_mac/Mission09_ckearl2/Mission09_ckearl2/bin/Debug/netcoreapp3.1/libman.json

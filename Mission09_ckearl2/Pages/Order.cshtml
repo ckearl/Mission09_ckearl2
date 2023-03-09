@@ -1,44 +1,48 @@
 @page
-@using System.Globalization
 @model Mission09_ckearl2.Pages.OrderModel
 
 @{
     
 }
+<div class="m-3 d-flex flex-column justify-content-center align-items-center">
+    <h2>Your Cart</h2>
+</div>
 
-<h2>Your Cart</h2>
+<div class="row m-2">
+    <div class="col-4 d-flex flex-column justify-content-center align-items-center">
+        <a class="btn btn-info" href="@Model.ReturnUrl">Continue Shopping</a>    
+    </div>
+    <div class="col-8">
+        <table class="table table-bordered table-striped">
+            <thead>
+            <tr>
+                <th>Title</th>
+                <th>Quantity</th>
+                <th>Cost</th>
+                <th>Subtotal</th>
+            </tr>
+            </thead>
 
-<table class="table table-bordered table-striped">
-    <thead>
-    <tr>
-        <th>Title</th>
-        <th>Quantity</th>
-        <th>Cost</th>
-        <th>Subtotal</th>
-    </tr>
-    </thead>
-    
-    <tbody>
-    @foreach (var item in Model.cart.Items)
-    {
-        <tr>
-            <td>@item.Book.Title</td>
-            <td>@item.Quantity</td>
-            <td>@item.Book.Price</td>
-            <td>@(item.Quantity * item.Book.Price)</td>
-                
-        </tr>
-    }
-    </tbody>
-    
-    <tfoot>
-    <tr>
-        <td colspan="3">Total:</td>
-        <td>@Model.cart.CalculateTotal().ToString("c", CultureInfo.CurrentCulture)</td> 
-    </tr>
-    </tfoot>
-</table>
+            <tbody>
+            @foreach (var item in Model.cart.Items)
+            {
+                <tr>
+                    <td>@item.Book.Title</td>
+                    <td>@item.Quantity</td>
+                    <td>$@item.Book.Price</td>
+                    <td>$@(item.Quantity * item.Book.Price)</td>
 
-<div class="">
-    <a class="btn btn-info" href="@Model.ReturnUrl">Continue Dontaing</a>
+                </tr>
+            }
+            </tbody>
+
+            <tfoot>
+            <tr>
+                <td colspan="3">Total:</td>
+                <td>$@Math.Round(Model.cart.CalculateTotal(),2).ToString()</td>
+            </tr>
+            </tfoot>
+        </table>
+    </div>
+
 </div>
