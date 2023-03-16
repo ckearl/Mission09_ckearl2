@@ -10,6 +10,7 @@ namespace Mission09_ckearl2.Models
 {
     public partial class Book
     {
+        [Key]
         [Required]
         public int BookId { get; set; }
         [Required]

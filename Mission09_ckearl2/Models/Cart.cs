@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 
 namespace Mission09_ckearl2.Models
@@ -7,10 +8,10 @@ namespace Mission09_ckearl2.Models
     {
         public List<CartLineItem> Items { get; set; } = new List<CartLineItem>();
 
-        public void AddItem(Book book, int qty)
+        public virtual void AddItem(Book book, int qty)
         {
             CartLineItem line = Items
-                .Where(b => b.Book.BookId == book.BookId)
+                .Where(li => li.Book.BookId == book.BookId)
                 .FirstOrDefault();
 
             if (line == null)
@@ -27,6 +28,16 @@ namespace Mission09_ckearl2.Models
             }
         }
 
+        public virtual void RemoveItem(Book book)
+        {
+            Items.RemoveAll(li => li.Book.BookId == book.BookId);
+        }
+
+        public virtual void ClearCart()
+        {
+            Items.Clear();
+        }
+
         public double CalculateTotal()
         {
             double sum = Items.Sum(x => x.Quantity * x.Book.Price);
@@ -36,6 +47,7 @@ namespace Mission09_ckearl2.Models
 
     public class CartLineItem
     {
+        [Key]
         public int LineID { get; set; }
         public Book Book { get; set; }
         public int Quantity { get; set; }

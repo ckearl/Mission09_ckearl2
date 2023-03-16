@@ -18,7 +18,8 @@ namespace Mission09_ckearl2.Models
             : base(options)
         {
         }
-        public virtual DbSet<Book> Books { get; set; }
+        public DbSet<Book> Books { get; set; }
+        public DbSet<Order> Orders { get; set; }
         
     }
 }
