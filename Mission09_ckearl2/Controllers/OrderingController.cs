@@ -26,7 +26,7 @@ namespace Mission09_ckearl2.Controllers
         {
             if (cart.Items.Count() == 0)
             {
-                ModelState.AddModelError("", "Sorry your basket is empty!");
+                ModelState.AddModelError("", "Sorry your cart is empty!");
             }
 
             if (ModelState.IsValid)
@@ -34,7 +34,7 @@ namespace Mission09_ckearl2.Controllers
                 order.Lines = cart.Items.ToArray();
                 repo.SaveOrder(order);
                 cart.ClearCart();
-                return RedirectToPage("/DonationCompleted");
+                return RedirectToPage("/OrderCompleted");
             }
             else
             {

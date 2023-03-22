@@ -9,9 +9,7 @@
 </div>
 
 <div class="row m-2">
-    <div class="col-4 d-flex flex-column justify-content-center align-items-center">
-        <a class="btn btn-info" href="@Model.ReturnUrl">Continue Shopping</a>    
-    </div>
+    
     <div class="col-8">
         <table class="table table-bordered table-striped">
             <thead>
@@ -47,7 +45,10 @@
 
 </div>
 
-<div class="">
-    <a class="btn btn-info" href="@Model.ReturnUrl">Continue Shopping</a>
-    <a class="btn btn-primary" asp-action="Checkout" asp-controller="Ordering">Checkout</a>
+<div class="row m-2 d-flex flex-row align-items-center align-content-around">
+    <div class="col-8">
+        <a class="btn btn-info" href="@Model.ReturnUrl">Continue Shopping</a>
+        <a class="btn btn-primary" asp-action="Checkout" asp-controller="Ordering">Checkout</a>    
+    </div>
+    
 </div>

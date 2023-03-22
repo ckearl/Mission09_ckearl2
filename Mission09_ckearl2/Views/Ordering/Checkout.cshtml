@@ -4,9 +4,9 @@
 @model Order
 
 <h2>Check out now</h2>
-<p>Please enter your details, and we will get your donation to those who need it!</p>
+<p>Please enter your details and we will ship your items to you!</p>
 
-<form action="post" asp-action="Checkout" asp-controller="Ordering">
+<form method="post" asp-controller="Ordering" asp-action="Checkout">
     <div asp-validation-summary="All" class="text-danger"></div>
     <h4>Ship To</h4>
     <div class="form-group">
@@ -47,11 +47,11 @@
 
     <div class="checkbox">
         <label asp-for="Anonymous">
-            <input asp-for="Anonymous" type="checkbox"/> Donate Anonymously
+            <input asp-for="Anonymous" type="checkbox"/> Checkout without creating an account
         </label>
     </div>
     <div class="float-end">
-        <input type="submit" class="btn btn-info" value="Send Donation"/>
+        <input type="submit" class="btn btn-info" value="Place Order"/>
     </div>
 
 

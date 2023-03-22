@@ -9,7 +9,13 @@ namespace Mission09_ckearl2.Pages
     public class OrderModel : PageModel
     {
         private IBookstoreRepository repo { get; set; }
-        public OrderModel(IBookstoreRepository temp) => repo = temp;
+
+        public OrderModel(IBookstoreRepository temp, Cart c)
+        {
+            repo = temp;
+            cart = c;
+        }
+
         public Cart cart { get; set; }
         public string ReturnUrl { get; set; }
         public void OnGet(string returnUrl)

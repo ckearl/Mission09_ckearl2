@@ -1,5 +1,6 @@
 /Users/tophkearl/byU/wint_23/is413/vs_mac/Mission09_ckearl2/Mission09_ckearl2/bin/Debug/netcoreapp3.1/appsettings.Development.json
 /Users/tophkearl/byU/wint_23/is413/vs_mac/Mission09_ckearl2/Mission09_ckearl2/bin/Debug/netcoreapp3.1/appsettings.json
+/Users/tophkearl/byU/wint_23/is413/vs_mac/Mission09_ckearl2/Mission09_ckearl2/bin/Debug/netcoreapp3.1/libman.json
 /Users/tophkearl/byU/wint_23/is413/vs_mac/Mission09_ckearl2/Mission09_ckearl2/bin/Debug/netcoreapp3.1/Properties/launchSettings.json
 /Users/tophkearl/byU/wint_23/is413/vs_mac/Mission09_ckearl2/Mission09_ckearl2/bin/Debug/netcoreapp3.1/Mission09_ckearl2.deps.json
 /Users/tophkearl/byU/wint_23/is413/vs_mac/Mission09_ckearl2/Mission09_ckearl2/bin/Debug/netcoreapp3.1/Mission09_ckearl2.runtimeconfig.json
@@ -67,7 +68,15 @@
 /Users/tophkearl/byU/wint_23/is413/vs_mac/Mission09_ckearl2/Mission09_ckearl2/obj/Debug/netcoreapp3.1/Mission09_ckearl2.TagHelpers.input.cache
 /Users/tophkearl/byU/wint_23/is413/vs_mac/Mission09_ckearl2/Mission09_ckearl2/obj/Debug/netcoreapp3.1/Mission09_ckearl2.TagHelpers.output.cache
 /Users/tophkearl/byU/wint_23/is413/vs_mac/Mission09_ckearl2/Mission09_ckearl2/obj/Debug/netcoreapp3.1/Mission09_ckearl2.RazorCoreGenerate.cache
+/Users/tophkearl/byU/wint_23/is413/vs_mac/Mission09_ckearl2/Mission09_ckearl2/obj/Debug/netcoreapp3.1/Razor/Pages/Order.cshtml.g.cs
+/Users/tophkearl/byU/wint_23/is413/vs_mac/Mission09_ckearl2/Mission09_ckearl2/obj/Debug/netcoreapp3.1/Razor/Pages/OrderCompleted.cshtml.g.cs
+/Users/tophkearl/byU/wint_23/is413/vs_mac/Mission09_ckearl2/Mission09_ckearl2/obj/Debug/netcoreapp3.1/Razor/Pages/_CartLayout.cshtml.g.cs
+/Users/tophkearl/byU/wint_23/is413/vs_mac/Mission09_ckearl2/Mission09_ckearl2/obj/Debug/netcoreapp3.1/Razor/Pages/_ViewImports.cshtml.g.cs
+/Users/tophkearl/byU/wint_23/is413/vs_mac/Mission09_ckearl2/Mission09_ckearl2/obj/Debug/netcoreapp3.1/Razor/Pages/_ViewStart.cshtml.g.cs
 /Users/tophkearl/byU/wint_23/is413/vs_mac/Mission09_ckearl2/Mission09_ckearl2/obj/Debug/netcoreapp3.1/Razor/Views/Home/Index.cshtml.g.cs
+/Users/tophkearl/byU/wint_23/is413/vs_mac/Mission09_ckearl2/Mission09_ckearl2/obj/Debug/netcoreapp3.1/Razor/Views/Ordering/Checkout.cshtml.g.cs
+/Users/tophkearl/byU/wint_23/is413/vs_mac/Mission09_ckearl2/Mission09_ckearl2/obj/Debug/netcoreapp3.1/Razor/Views/Shared/BookSummary.cshtml.g.cs
+/Users/tophkearl/byU/wint_23/is413/vs_mac/Mission09_ckearl2/Mission09_ckearl2/obj/Debug/netcoreapp3.1/Razor/Views/Shared/Components/Types/Default.cshtml.g.cs
 /Users/tophkearl/byU/wint_23/is413/vs_mac/Mission09_ckearl2/Mission09_ckearl2/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_Layout.cshtml.g.cs
 /Users/tophkearl/byU/wint_23/is413/vs_mac/Mission09_ckearl2/Mission09_ckearl2/obj/Debug/netcoreapp3.1/Razor/Views/_ViewImports.cshtml.g.cs
 /Users/tophkearl/byU/wint_23/is413/vs_mac/Mission09_ckearl2/Mission09_ckearl2/obj/Debug/netcoreapp3.1/Razor/Views/_ViewStart.cshtml.g.cs
@@ -80,10 +89,4 @@
 /Users/tophkearl/byU/wint_23/is413/vs_mac/Mission09_ckearl2/Mission09_ckearl2/obj/Debug/netcoreapp3.1/Mission09_ckearl2.dll
 /Users/tophkearl/byU/wint_23/is413/vs_mac/Mission09_ckearl2/Mission09_ckearl2/obj/Debug/netcoreapp3.1/Mission09_ckearl2.pdb
 /Users/tophkearl/byU/wint_23/is413/vs_mac/Mission09_ckearl2/Mission09_ckearl2/obj/Debug/netcoreapp3.1/Mission09_ckearl2.genruntimeconfig.cache
-/Users/tophkearl/byU/wint_23/is413/vs_mac/Mission09_ckearl2/Mission09_ckearl2/obj/Debug/netcoreapp3.1/Razor/Views/Shared/BookSummary.cshtml.g.cs
-/Users/tophkearl/byU/wint_23/is413/vs_mac/Mission09_ckearl2/Mission09_ckearl2/obj/Debug/netcoreapp3.1/Razor/Pages/Order.cshtml.g.cs
-/Users/tophkearl/byU/wint_23/is413/vs_mac/Mission09_ckearl2/Mission09_ckearl2/obj/Debug/netcoreapp3.1/Razor/Pages/_CartLayout.cshtml.g.cs
-/Users/tophkearl/byU/wint_23/is413/vs_mac/Mission09_ckearl2/Mission09_ckearl2/obj/Debug/netcoreapp3.1/Razor/Pages/_ViewImports.cshtml.g.cs
-/Users/tophkearl/byU/wint_23/is413/vs_mac/Mission09_ckearl2/Mission09_ckearl2/obj/Debug/netcoreapp3.1/Razor/Pages/_ViewStart.cshtml.g.cs
-/Users/tophkearl/byU/wint_23/is413/vs_mac/Mission09_ckearl2/Mission09_ckearl2/obj/Debug/netcoreapp3.1/Razor/Views/Shared/Components/Types/Default.cshtml.g.cs
-/Users/tophkearl/byU/wint_23/is413/vs_mac/Mission09_ckearl2/Mission09_ckearl2/bin/Debug/netcoreapp3.1/libman.json
+/Users/tophkearl/byU/wint_23/is413/vs_mac/Mission09_ckearl2/Mission09_ckearl2/obj/Debug/netcoreapp3.1/Razor/Views/Shared/Components/CartSummary/Default.cshtml.g.cs

@@ -13,18 +13,18 @@ namespace Mission09_ckearl2.Models
         [BindNever]
         public ICollection<CartLineItem> Lines { get; set; }
         
-        [Required(ErrorMessage = "Please enter a name:")]
+        [Required(ErrorMessage = "Please enter a name")]
         public string Name { get; set; }
-        [Required(ErrorMessage = "Please enter the first address line:")]
+        [Required(ErrorMessage = "Please enter the first address line")]
         public string AddressLine1 { get; set; }
         public string AddressLine2 { get; set; }
         public string AddressLine3 { get; set; }
-        [Required(ErrorMessage = "Please enter a city name:")]
+        [Required(ErrorMessage = "Please enter a city name")]
         public string City { get; set; }
-        [Required(ErrorMessage = "Please enter a state:")]
+        [Required(ErrorMessage = "Please enter a state")]
         public string State { get; set; }
         public string Zip { get; set; }
-        [Required(ErrorMessage = "Please enter a country:")]
+        [Required(ErrorMessage = "Please enter a country")]
         public string Country { get; set; }
         public bool Anonymous { get; set; }
 
