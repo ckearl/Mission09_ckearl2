@@ -8,7 +8,7 @@
         <small class="navbar-text text-white">
             <b>Your cart:</b>
             @Model.Items.Sum(x => x.Quantity) item(s)
-            @Model.CalculateTotal().ToString("c")
+            $@Model.CalculateTotal().ToString()
         </small>
     }
     <a class="btn btn-sm btn-secondary navbar-btn" asp-page="/Cart"

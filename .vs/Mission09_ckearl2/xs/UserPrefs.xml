@@ -1,4 +1,55 @@
 ﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{07BD651A-19B4-49CC-B929-2DA03980E185}|Default">
   <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint enabled="false" file="/Users/tophkearl/byU/wint_23/is413/vs_mac/Mission09_ckearl2/Mission09_ckearl2/Controllers/HomeController.cs" relfile="Mission09_ckearl2/Controllers/HomeController.cs" line="14" column="1" />
+      <Breakpoint enabled="false" file="/Users/tophkearl/byU/wint_23/is413/vs_mac/Mission09_ckearl2/Mission09_ckearl2/Controllers/HomeController.cs" relfile="Mission09_ckearl2/Controllers/HomeController.cs" line="15" column="1" />
+      <Breakpoint file="/Users/tophkearl/byU/wint_23/is413/vs_mac/Mission09_ckearl2/Mission09_ckearl2/Controllers/OrderingController.cs" relfile="Mission09_ckearl2/Controllers/OrderingController.cs" line="26" column="1" />
+      <Breakpoint file="/Users/tophkearl/byU/wint_23/is413/vs_mac/Mission09_ckearl2/Mission09_ckearl2/Controllers/OrderingController.cs" relfile="Mission09_ckearl2/Controllers/OrderingController.cs" line="13" column="1" />
+      <Breakpoint file="/Users/tophkearl/byU/wint_23/is413/vs_mac/Mission09_ckearl2/Mission09_ckearl2/Models/SessionCart.cs" relfile="Mission09_ckearl2/Models/SessionCart.cs" line="23" column="1" />
+      <Breakpoint file="/Users/tophkearl/byU/wint_23/is413/vs_mac/Mission09_ckearl2/Mission09_ckearl2/Pages/Order.cshtml.cs" relfile="Mission09_ckearl2/Pages/Order.cshtml.cs" line="28" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Mission09_ckearl2/Infrastructure/SessionExtensions.cs">
+    <Files>
+      <File FileName="Mission09_ckearl2/Controllers/HomeController.cs" Line="15" Column="1" />
+      <File FileName="Mission09_ckearl2/Controllers/OrderingController.cs" Line="13" Column="1" />
+      <File FileName="Mission09_ckearl2/Pages/OrderCompleted.cshtml" Line="1" Column="1" />
+      <File FileName="Mission09_ckearl2/Pages/Order.cshtml.cs" Line="32" Column="1" />
+      <File FileName="Mission09_ckearl2/Views/Ordering/Checkout.cshtml" Line="1" Column="1" />
+      <File FileName="Mission09_ckearl2/Models/Order.cs" Line="1" Column="1" />
+      <File FileName="Mission09_ckearl2/Models/SessionCart.cs" Line="23" Column="44" />
+      <File FileName="Mission09_ckearl2/Startup.cs" Line="35" Column="35" />
+      <File FileName="Mission09_ckearl2/Views/Shared/BookSummary.cshtml" Line="26" Column="58" />
+      <File FileName="Mission09_ckearl2/Pages/Order.cshtml" Line="1" Column="1" />
+      <File FileName="Mission09_ckearl2/Infrastructure/SessionExtensions.cs" Line="21" Column="1" />
+      <File FileName="Mission09_ckearl2/Models/Cart.cs" Line="29" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Mission09_ckearl2" expanded="True">
+            <Node name="Mission09_ckearl2" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Infrastructure" expanded="True">
+                <Node name="SessionExtensions.cs" selected="True" />
+              </Node>
+              <Node name="Models" expanded="True" />
+              <Node name="Pages" expanded="True">
+                <Node name="Order.cshtml" expanded="True" />
+              </Node>
+              <Node name="Views" expanded="True">
+                <Node name="Home" expanded="True" />
+                <Node name="Ordering" expanded="True" />
+                <Node name="Shared" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.Mission09__ckearl2 PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>
